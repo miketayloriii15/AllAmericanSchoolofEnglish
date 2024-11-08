@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All American School of English - Book a Lesson</title>
+
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- FontAwesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Body and Background */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333333;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Form Container Styling */
+        .form-container {
+            background-color: #444;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            max-width: 700px;
+            margin: 2rem auto;
+        }
+
+        .form-container h2 {
+            color: #aad1e6;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive Iframe Styling */
+        .form-container iframe {
+            width: 100%;
+            border: none;
+            min-height: 500px;
+            /* Minimum height for readability on smaller screens */
+        }
+
+        /* Adjust iframe height based on screen size */
+        @media (min-width: 992px) {
+            .form-container iframe {
+                height: 700px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .form-container iframe {
+                height: 650px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .form-container iframe {
+                height: 550px;
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #222;
+            color: #aad1e6;
+            padding: 2rem 0;
+            border-top: 1px solid #444;
+            text-align: center;
+        }
+
+        .nav-link {
+            color: #aad1e6;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        .nav-link:hover {
+            color: #889fb1;
+            transform: scale(1.05);
+        }
+
+        .contact-info p,
+        .social-links a {
+            color: #aad1e6;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+        }
+
+        /* Ensures Email and Phone Links in Footer Match Other Footer Colors */
+        .contact-info a.contact-link {
+            color: #aad1e6;
+            text-decoration: none;
+        }
+
+        .contact-info a.contact-link:hover {
+            color: #889fb1;
+            text-decoration: underline;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        .social-links .fa-tiktok:hover {
+            color: #25F4EE;
+            transform: scale(1.2);
+        }
+
+        .social-links .fa-instagram {
+            color: #E4405F;
+            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .social-links .fa-instagram:hover {
+            color: #F56040;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Booking Form Section -->
+    <div class="container my-5">
+        <div class="form-container">
+            <h2>Book a Lesson</h2>
+
+            <!-- Embedded Google Form with Lazy Loading Adjustment -->
+            <iframe
+                data-src="https://docs.google.com/forms/d/e/1FAIpQLSd2jYyECYb1yENvaBHdI15AbS7GhEP6ScnpumRye3soCpEJ8Q/viewform?embedded=true"
+                title="All American School of English Booking Form" id="bookingFormIframe">Loading…</iframe>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="py-4">
+        <div class="container">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2">Home</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link px-2">Courses</a></li>
+                <li class="nav-item"><a href="instructor.html" class="nav-link px-2">Instructors</a></li>
+                <li class="nav-item"><a href="faqs.html" class="nav-link px-2">FAQs</a></li>
+                <li class="nav-item"><a href="booking.html" class="nav-link px-2">Booking</a></li>
+            </ul>
+            <p class="mb-2">Join Us and Start Learning!</p>
+            <div class="social-links">
+                <a href="https://www.tiktok.com/@all.american.eng" target="_blank" title="TikTok"
+                    rel="noopener noreferrer">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.instagram.com/all.american.eng" target="_blank" title="Instagram"
+                    rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="contact-info mt-3">
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:english.all.american@gmail.com"
+                        class="contact-link" rel="noopener noreferrer">english.all.american@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: <a href="tel:+48571211475" class="contact-link"
+                        rel="noopener noreferrer">+48 571 211 475</a></p>
+            </div>
+            <p class="text-center mt-2">© 2024 All American School of English, Inc</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Link -->
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Lazy Loading Script for iframe -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const iframe = document.getElementById("bookingFormIframe");
+
+            function loadIframe() {
+                const iframeTop = iframe.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (iframeTop < windowHeight) {
+                    iframe.src = iframe.getAttribute("data-src");
+                    window.removeEventListener("scroll", loadIframe);
+                }
+            }
+
+            // Load the iframe when it enters the viewport
+            window.addEventListener("scroll", loadIframe);
+            loadIframe();
+        });
+    </script>
+</body>
+
+</html>
