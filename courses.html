@@ -34,6 +34,8 @@
             width: 90%;
             max-width: 600px;
             text-align: center;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
 
         .carousel-caption h5 {
@@ -66,17 +68,18 @@
             }
         }
 
-        /* Smaller screen adjustments */
+        /* Adjustments for Smaller Screens */
         @media (max-width: 576px) {
             .carousel-caption {
                 width: 85%;
+                padding: 0.5rem;
                 max-width: 90%;
-                padding: 0.75rem;
             }
 
             .carousel-caption h5 {
                 font-size: 1.1rem;
                 line-height: 1.3;
+                margin-bottom: 0.5rem;
             }
 
             .carousel-caption p {
@@ -85,7 +88,7 @@
             }
         }
 
-        /* Adjust for Mid-Sized Screens */
+        /* Adjustments for Mid-Sized Screens */
         @media (max-width: 768px) and (min-width: 577px) {
             .carousel-caption {
                 width: 90%;
@@ -127,7 +130,6 @@
             margin: 0.5rem 0;
         }
 
-        /* Ensures Email and Phone Links in Footer Match Other Footer Colors */
         .contact-info a.contact-link {
             color: #aad1e6;
             text-decoration: none;
@@ -260,9 +262,7 @@
 
     <!-- JavaScript Link -->
     <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
